@@ -80,7 +80,7 @@
             color: #fff;
             text-align: center;
             padding: 1rem;
-      margin-top: 2rem;
+            margin-top: 2rem;
             position: relative;
         }
 
@@ -182,6 +182,11 @@
             z-index: 0;
         }
 
+        .hobbies {
+            min-height: 400px;
+            /* or bigger than tallest card */
+        }
+
         .hobbies.section-bg::before {
             content: "";
             position: absolute;
@@ -263,6 +268,60 @@
             color: #000;
 
         }
+
+        .flip-card {
+            perspective: 1000px;
+            /* enables 3D effect */
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            position: relative;
+             max-height: 400px;
+        }
+
+        @media (max-width: 576px) {
+            .flip-card {
+                min-height: 250px;
+                /* smaller on phones */
+            }
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        
+         .flip-card.flipped .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            z-index: 2;
+        }
+
+       
+            .flip-card-back {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+             margin: 0 auto;
+        }
     </style>
 </head>
 
@@ -284,7 +343,7 @@
             <!-- Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                     <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="projects.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact</a></li>
@@ -292,14 +351,17 @@
             </div>
         </div>
     </nav>
+
     <!-- Hobbies Section -->
     <section id="hobbies" class="hobbies py-5 section-bg">
         <div class="container">
             <h2 class="text-center mb-5">Hobbies</h2>
             <div class="row g-4">
 
+
+
                 <!-- Crochet -->
-                <div class="col-md-3 col-sm-6">
+                <!-- <div class="col-md-3 col-sm-6">
                     <div class="card h-100 text-center shadow bg-white">
                         <div class="card-body  text-dark">
                             <img src="images/Crochet_heart_crochet_my_hobby_logo_vector_illustration___Premium_Vector-removebg-preview.png"
@@ -307,10 +369,33 @@
                             <h6 class="card-title">Crochet</h6>
                         </div>
                     </div>
-                </div>
+                </div> -->
+               <div class="col-md-3 col-sm-6">
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-card-inner">
+      <!-- Front -->
+      <div class="flip-card-front card h-100 text-center shadow bg-white">
+        <div class="card-body text-dark">
+          <img src="images/Crochet_heart_crochet_my_hobby_logo_vector_illustration___Premium_Vector-removebg-preview.png"
+               alt="Crochet Icon" class="mb-3 img-fluid" style="max-height:250px;">
+          <h6 class="card-title">Crochet</h6>
+          <p>(tap to reveal my fav make)</p>
+        </div>
+      </div>
+      <!-- Back -->
+      <div class="flip-card-back card h-100 text-center shadow bg-light">
+        <div class="card-body">
+          <img src="images/20210629_160448_IMG_8937_Original.JPG" alt="Crochet Work"
+               class="img-fluid rounded" style="object-fit: contain; width: 100%; height: 100%;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
                 <!-- Reading -->
-                <div class="col-md-3 col-sm-6">
+                <!-- <div class="col-md-3 col-sm-6">
                     <div class="card h-100 text-center shadow bg-white">
                         <div class="card-body  text-dark">
                             <img src="images/reading-removebg-preview.png" alt="Reading Icon" class="mb-3 img-fluid"
@@ -318,10 +403,32 @@
                             <h6 class="card-title">Reading</h6>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
+ <div class="col-md-3 col-sm-6">
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-card-inner">
+      <!-- Front -->
+      <div class="flip-card-front card h-100 text-center shadow bg-white">
+        <div class="card-body text-dark">
+          <img src="images/reading-removebg-preview.png"
+               alt="Reading Icon" class="mb-3 img-fluid" style="max-height:250px;">
+          <h6 class="card-title">Reading</h6>
+          <p>(tap to reveal my fav read)</p>
+        </div>
+      </div>
+      <!-- Back -->
+      <div class="flip-card-back card h-100 text-center shadow bg-light">
+        <div class="card-body">
+          <img src="images/images (5).jpeg" alt="book"
+               class="img-fluid rounded" style="object-fit: contain; width: 100%; height: 100%;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
                 <!-- Podcasts -->
-                <div class="col-md-3 col-sm-6">
+                <!-- <div class="col-md-3 col-sm-6">
                     <div class="card h-100 text-center shadow bg-white">
                         <div class="card-body  text-dark">
                             <img src="images/pod-removebg-preview.png" alt="Podcasts Icon" class="mb-3 img-fluid"
@@ -329,15 +436,42 @@
                             <h6 class="card-title">Podcasts</h6>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
+
+ <div class="col-md-3 col-sm-6">
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-card-inner">
+      <!-- Front -->
+      <div class="flip-card-front card h-100 text-center shadow bg-white">
+        <div class="card-body text-dark">
+          <img src="images/pod-removebg-preview.png"
+               alt="pod Icon" class="mb-3 img-fluid" style="max-height:250px;">
+          <h6 class="card-title">Podcasts</h6>
+          <p>(tap for my go-to listen)</p>
+        </div>
+      </div>
+      <!-- Back -->
+      <div class="flip-card-back card h-100 text-center shadow bg-light">
+        <div class="card-body">
+          <img src="images/Screenshot_20250901_185514.jpg" alt="book"
+               class="img-fluid rounded" style="object-fit: contain; width: 100%; height: 100%;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
                 <!-- Journaling -->
                 <div class="col-md-3 col-sm-6">
                     <div class="card h-100 text-center shadow bg-white">
+                         <a href="https://substack.com/@biblestudybestie">
                         <div class="card-body text-dark">
                             <img src="images/journal-removebg-preview.png" alt="Journaling Icon" class="mb-3 img-fluid"
-                                style="max-height:80px;">
-                            <h6 class="card-title">Journaling</h6>
+                                style="max-height:250px;">
+                           
+                                <h6 class="card-title">Journaling</h6>
+                            </a>
+                             <p>(tap to read some pieces I wrote)</p>
                         </div>
                     </div>
                 </div>
