@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Portfolio</title>
+  <title>About</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Bootstrap Icons -->
@@ -77,20 +77,30 @@
     /* Footer */
     footer {
       background: url(images/blacksatin.jpg);
-      color: #fff;
+      color: #000000;
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
       position: relative;
     }
 
-    footer a {
-      text-decoration: none;
+    .footer-icon {
+      color: #000000;
     }
 
-    footer a:hover {
-      color: #ccc;
+    .footer-icon:hover {
+      color: #616161;
     }
+
+    footer a {
+      text-decoration: none;
+      color: black;
+
+    }
+
+    /* footer a:hover {
+      color: #292929;
+    } */
 
     footer::before {
       content: "";
@@ -99,7 +109,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(44, 40, 40, 0.6);
+      background: rgba(255, 255, 255, 0.9);
       z-index: 1;
     }
 
@@ -233,26 +243,30 @@
       position: relative;
       z-index: 2;
     }
+
     /* Control testimonial image size */
-.testimonial-img {
-  max-width: 300px; /* shrink to your preferred width */
-  height: auto;     /* maintain aspect ratio */
-}
+    .testimonial-img {
+      max-width: 300px;
+      /* shrink to your preferred width */
+      height: auto;
+      /* maintain aspect ratio */
+    }
 
-/* Give extra space so indicators don’t overlap */
-.testimonial .carousel-inner {
-  padding-bottom: 40px; 
-}
-.top a {
-  text-decoration: none;
-  color: #ccc;
-}
-.top a:hover {
-  background-color: #dbdbdb;
-  color: #000;
+    /* Give extra space so indicators don’t overlap */
+    .testimonial .carousel-inner {
+      padding-bottom: 40px;
+    }
 
-}
+    .top a {
+      text-decoration: none;
+      color: #ccc;
+    }
 
+    .top a:hover {
+      background-color: #dbdbdb;
+      color: #000;
+
+    }
   </style>
 </head>
 
@@ -301,8 +315,9 @@
         <!-- Text Column -->
         <div class="col-md-6">
           <p class="lead">
-            Three words that best describe me: Curious, Creative, and Collaborative. 
-            This curiosity drives me to explore beyond the surface, seeking to understand how things work and how they can be improved.
+            Three words that best describe me: Curious, Creative, and Collaborative.
+            This curiosity drives me to explore beyond the surface, seeking to understand how things work and how they
+            can be improved.
             Creativity is my problem solving tool, while collaboation is the force through which my impact is amplified.
           </p>
         </div>
@@ -318,174 +333,204 @@
   </section>
 
 
-<!-- skills section -->
-<section id="projects" class="projects py-5 bg-dark">
+  <!-- skills section -->
+  <section id="projects" class="projects py-5 bg-dark">
     <div class="container">
       <h2 class="text-center text-white mb-4">Languages</h2>
       <div class="row g-4">
 
-<div class="d-flex align-items-center mb-3">
-  <div class="progress flex-grow-1" style="max-width:70%;">
-    <div class="progress-bar progress-bar-striped progress-bar-animated" 
-         role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
-      15%
-    </div>
-  </div>
-  <span class="ms-3 text-light">JavaScript</span>
-</div>
+        <div class="d-flex align-items-center mb-3">
+          <div class="progress flex-grow-1" style="max-width:70%;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 15%;"
+              aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+              15%
+            </div>
+          </div>
+          <span class="ms-3 text-light">JavaScript</span>
+        </div>
 
-<div class="d-flex align-items-center mb-3">
-  <div class="progress flex-grow-1" style="max-width:70%;">
-    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" 
-         role="progressbar" style="width: 50%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
-      50%
-    </div>
-  </div>
-  <span class="ms-3 text-light">AutoCAD</span>
-</div>
+        <div class="d-flex align-items-center mb-3">
+          <div class="progress flex-grow-1" style="max-width:70%;">
+            <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar"
+              style="width: 50%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+              50%
+            </div>
+          </div>
+          <span class="ms-3 text-light">AutoCAD</span>
+        </div>
 
-<div class="d-flex align-items-center mb-3">
-  <div class="progress flex-grow-1" style="max-width:70%;">
-    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
-         role="progressbar" style="width: 70%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-      70%
-    </div>
-  </div>
-  <span class="ms-3 text-light">Bootstrap</span>
-</div>
+        <div class="d-flex align-items-center mb-3">
+          <div class="progress flex-grow-1" style="max-width:70%;">
+            <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar"
+              style="width: 70%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+              70%
+            </div>
+          </div>
+          <span class="ms-3 text-light">Bootstrap</span>
+        </div>
 
-<div class="d-flex align-items-center mb-3">
-  <div class="progress flex-grow-1" style="max-width:70%;">
-    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" 
-         role="progressbar" style="width: 85%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-      85%
-    </div>
-  </div>
-  <span class="ms-3 text-light">CSS</span>
-</div>
+        <div class="d-flex align-items-center mb-3">
+          <div class="progress flex-grow-1" style="max-width:70%;">
+            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar"
+              style="width: 85%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              85%
+            </div>
+          </div>
+          <span class="ms-3 text-light">CSS</span>
+        </div>
 
-<div class="d-flex align-items-center mb-3">
-  <div class="progress flex-grow-1" style="max-width:70%;">
-    <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" 
-         role="progressbar" style="width: 98%;" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
-      98%
-    </div>
-  </div>
-  <span class="ms-3 text-light">HTML5</span>
-</div>
+        <div class="d-flex align-items-center mb-3">
+          <div class="progress flex-grow-1" style="max-width:70%;">
+            <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar"
+              style="width: 98%;" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+              98%
+            </div>
+          </div>
+          <span class="ms-3 text-light">HTML5</span>
+        </div>
 
-</section>
+  </section>
 
-<!-- Skills Highlight Section -->
-<section id="about" class="about py-5">
+  <!-- Skills Highlight Section -->
+  <section id="about" class="about py-5">
     <div class="container">
       <h2 class="mb-4 text-center">Skills and Experience</h2>
       <div class="row align-items-center">
 
-    <!-- Card 1 -->
-     <div class="card mb-4 shadow-lg border-0">
-      <div class="row g-0 align-items-center">
-        <div class="col-md-7 p-4">
-          <h4>Clinical Engineering</h4>
-          <p>
-           As a hospital Biomedical Engineer, I was responsible for the 
-           installation, maintenance, servicing, and repair of medical equipment 
-           to ensure their safe and reliable use in patient care, in addition to traininig
-            medical staff on proper equipment usage.
-           
-          </p>
+        <!-- Card 1 -->
+        <div class="card mb-4 shadow-lg border-0">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-7 p-4">
+              <h4>Clinical Engineering</h4>
+              <p>
+                As a hospital Biomedical Engineer, I was responsible for the
+                installation, maintenance, servicing, and repair of medical equipment
+                to ensure their safe and reliable use in patient care, in addition to traininig
+                medical staff on proper equipment usage.
+
+              </p>
+            </div>
+            <div class="col-md-5 text-center p-0">
+              <img src="images/screw-4929711_1280.jpg" class="img-fluid rounded-end d-block w-100" alt="clinical">
+            </div>
+          </div>
         </div>
-        <div class="col-md-5 text-center p-0">
-          <img src="images/screw-4929711_1280.jpg" class="img-fluid rounded-end d-block w-100" alt="clinical">
+
+
+        <!-- Card 2 -->
+        <div class="card mb-4 shadow-lg border-0">
+          <div class="row g-0 align-items-center">
+
+            <div class="col-md-5 text-center p-0">
+              <img src="images/code_text_colorful_140555_1440x900.jpg" class="img-fluid rounded-start d-block w-85"
+                alt="Web Development">
+            </div>
+
+            <div class="col-md-7 p-4">
+              <h4>Web Development (HTML, CSS, Bootstrap, JS)</h4>
+              <p>
+                Currently honing my frontend development skills through fellowship
+                programs, I focus on building clean, responsive, and interactive
+                websites using modern web technologies.
+              </p>
+            </div>
+          </div>
         </div>
+
+
+        <!-- Card 3 -->
+        <div class="card mb-4 shadow-lg border-0">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-7 p-4">
+              <h4>Problem Solving & Innovation</h4>
+              <p>
+                I approach challenges from
+                a multidisciplinary perspective and enjoy designing creative solutions that
+                combine science, design, and technology to build impactful products.
+              </p>
+            </div>
+            <div class="col-md-5 text-center p-0">
+              <img src="images/close-up-roommate-playing-game.jpg" class="img-fluid rounded-end" alt="Problem Solving">
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card mb-4 shadow-lg border-0">
+          <div class="row g-0 align-items-center">
+
+            <div class="col-md-5 text-center p-0">
+              <img src="images/ideas-creation-design-process-icon-removebg-preview.png"
+                class="img-fluid rounded-start d-block w-90" alt="Product Design">
+            </div>
+            <div class="col-md-6 p-4">
+              <h4>Product Design</h4>
+              <p>
+                My competencies span across interactive and visual design.
+                I am exploring emerging areas such as UX engineering, VR, and AR,
+                which I believe will shape the future of digital interaction.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card mb-4 shadow-lg border-0">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-7 p-4">
+              <h4>Team Collaboration & Project Management</h4>
+              <p>
+                Through fellowships and projects, I have developed strong collaboration skills,
+                working effectively within teams to deliver results. I am also building
+                experience in project management, ensuring tasks are organized, deadlines are
+                met, and communication remains professional throughout.
+              </p>
+            </div>
+            <div class="col-md-5 text-center p-0">
+              <img src="images/teamwork.png" class="img-fluid rounded-end d-block w-100" alt="Team Collaboration">
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+  </section>
+
+
+  <!-- Fellowships Section -->
+<section id="projects" class="projects py-5 bg-dark">
+    <div class="container">
+      <h2 class="text-center text-white mb-4">Fellowships</h2>
+      <div class="row g-4 justify-content-center">
+
+       <!-- WITU -->
+        <div class="col-md-3 col-sm-6">
+          <div class="card h-100 text-center shadow bg-white">
+            <div class="card-body  text-dark">
+              <img
+                src="images/witu-logo-official-black-edited.png"
+                alt="WITU Logo" class="mb-3 img-fluid" style="max-height:80px;">
+              <h6 class="card-title">Front-end Development</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- WT -->
+        <div class="col-md-3 col-sm-6">
+          <div class="card h-100 text-center shadow bg-dark">
+            <div class="card-body  text-light">
+              <img src="images/images-removebg-preview.png" alt="WT logo" class="img-fluid"
+                style="max-height:100px;">
+              <h6 class="card-title">Product Design</h6>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
-    
 
-    <!-- Card 2 -->
-<div class="card mb-4 shadow-lg border-0">
-  <div class="row g-0 align-items-center">
-   
-    <div class="col-md-5 text-center p-0">
-      <img src="images/code_text_colorful_140555_1440x900.jpg" 
-           class="img-fluid rounded-start d-block w-85" 
-           alt="Web Development">
-    </div>
-
-    <div class="col-md-7 p-4">
-      <h4>Web Development (HTML, CSS, Bootstrap, JS)</h4>
-      <p>
-        Currently honing my frontend development skills through fellowship 
-        programs, I focus on building clean, responsive, and interactive 
-        websites using modern web technologies.
-      </p>
-    </div>
-  </div>
-</div>
-
-
-    <!-- Card 3 -->
-    <div class="card mb-4 shadow-lg border-0">
-      <div class="row g-0 align-items-center">
-        <div class="col-md-7 p-4">
-          <h4>Problem Solving & Innovation</h4>
-          <p>
-            I approach challenges from
-            a multidisciplinary perspective and enjoy designing creative solutions that 
-            combine science, design, and technology to build impactful products.
-          </p>
-        </div>
-        <div class="col-md-5 text-center p-0">
-          <img src="images/close-up-roommate-playing-game.jpg" class="img-fluid rounded-end" alt="Problem Solving">
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="card mb-4 shadow-lg border-0">
-  <div class="row g-0 align-items-center">
-    
-    <div class="col-md-5 text-center p-0">
-      <img src="images/ideas-creation-design-process-icon-removebg-preview.png" 
-           class="img-fluid rounded-start d-block w-90" 
-           alt="Product Design">
-    </div>
-    <div class="col-md-6 p-4">
-      <h4>Product Design</h4>
-      <p>
-        My competencies span across interactive and visual design.
-        I am exploring emerging areas such as UX engineering, VR, and AR, 
-        which I believe will shape the future of digital interaction.
-      </p>
-    </div>
-  </div>
-</div>
-
-    <!-- Card 5 -->
-    <div class="card mb-4 shadow-lg border-0">
-  <div class="row g-0 align-items-center">
-    <div class="col-md-7 p-4">
-      <h4>Team Collaboration & Project Management</h4>
-      <p>
-        Through fellowships and projects, I have developed strong collaboration skills, 
-        working effectively within teams to deliver results. I am also building 
-        experience in project management, ensuring tasks are organized, deadlines are 
-        met, and communication remains professional throughout.
-      </p>
-    </div>
-    <div class="col-md-5 text-center p-0">
-      <img src="images/teamwork.png" 
-           class="img-fluid rounded-end d-block w-100" 
-           alt="Team Collaboration">
-    </div>
-  </div>
-</div>
-
-
-  </div>
-</section>
-
-
+  </section>
   <!-- Projects Section -->
   <!-- <section id="projects" class="projects py-5 bg-dark">
     <div class="container">
@@ -533,7 +578,7 @@
 
       </div>
     </div>
-  </section> --> 
+  </section> -->
 
 
   <!-- Hobbies Section -->
@@ -542,8 +587,8 @@
       <h2 class="text-center mb-5">Hobbies</h2>
       <div class="row g-4"> -->
 
-        <!-- Crochet -->
-        <!-- <div class="col-md-3 col-sm-6">
+  <!-- Crochet -->
+  <!-- <div class="col-md-3 col-sm-6">
           <div class="card h-100 text-center shadow bg-white">
             <div class="card-body  text-dark">
               <img
@@ -554,8 +599,8 @@
           </div>
         </div> -->
 
-        <!-- Reading -->
-        <!-- <div class="col-md-3 col-sm-6">
+  <!-- Reading -->
+  <!-- <div class="col-md-3 col-sm-6">
           <div class="card h-100 text-center shadow bg-white">
             <div class="card-body  text-dark">
               <img src="images/reading-removebg-preview.png" alt="Reading Icon" class="mb-3 img-fluid"
@@ -565,8 +610,8 @@
           </div>
         </div> -->
 
-        <!-- Podcasts -->
-        <!-- <div class="col-md-3 col-sm-6">
+  <!-- Podcasts -->
+  <!-- <div class="col-md-3 col-sm-6">
           <div class="card h-100 text-center shadow bg-white">
             <div class="card-body  text-dark">
               <img src="images/pod-removebg-preview.png" alt="Podcasts Icon" class="mb-3 img-fluid"
@@ -576,8 +621,8 @@
           </div>
         </div> -->
 
-        <!-- Journaling -->
-        <!-- <div class="col-md-3 col-sm-6">
+  <!-- Journaling -->
+  <!-- <div class="col-md-3 col-sm-6">
           <div class="card h-100 text-center shadow bg-white">
             <div class="card-body text-dark">
               <img src="images/journal-removebg-preview.png" alt="Journaling Icon" class="mb-3 img-fluid"
@@ -657,7 +702,7 @@
     </div>
   </section> -->
 
-<!-- contact section -->
+  <!-- contact section -->
   <!-- <section id="contact" class="contact py-5 section-bg">
     <div class="container">
       <h2 class="text-center text-dark mb-4">Talk to Me</h2>
@@ -676,25 +721,26 @@
     </div>
   </section> -->
 
-  <!-- Footer -->
-  <footer class="last bg-dark text-white mt-2">
+    <!-- Footer -->
+  <footer class="last bg-light mt-0">
     <div class="container py-2 text-center">
-      <div class="mb-3">
-        <a href="https://www.linkedin.com/in/zion-naluwooza-8b819421b/" target="_blank" class="text-white mx-2 fs-4">
+      <div class="mb-3 ">
+        <a href="https://www.linkedin.com/in/zion-naluwooza-8b819421b/" target="_blank" class="footer-icon mx-2 fs-4">
           <i class="bi bi-linkedin"></i>
         </a>
-        <a href="mailto:naluwoozazion@gmail.com" target="_blank" class="text-white mx-2 fs-4">
+        <a href="mailto:naluwoozazion@gmail.com" target="_blank" class="footer-icon  mx-2 fs-4">
           <i class="bi bi-envelope-fill"></i>
         </a>
-        <a href="https://www.instagram.com/xhion_256/" target="_blank" class="text-white mx-2 fs-4">
+        <a href="https://www.instagram.com/xhion_256/" target="_blank" class="footer-icon mx-2 fs-4 ">
           <i class="bi bi-instagram"></i>
         </a>
       </div>
-      <div class="top"><a href="#nav"><p>Back To top</p></a></div>
+      <div class="top text-dark"><a href="#nav">
+          <p>Back To top</p>
+        </a></div>
       <div>&copy;2025 NALUWOOZA ZION. All Rights Reserved.</div>
     </div>
   </footer>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
